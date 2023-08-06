@@ -26,6 +26,6 @@ jobs:
       - uses: actions/checkout@v3
       - name: install dependencies
         run: npm ci
-      - name: SCA analysis (npm audit)
-        run: npm audit
+      - name: SCA analysis (snyk)
+        run: npx snyk test
 
